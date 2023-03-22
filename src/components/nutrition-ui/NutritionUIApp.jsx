@@ -6,6 +6,7 @@ import LogoutComponent from './LogoutComponent'
 import FoodSearchForm from './FoodSearchForm'
 import './NutritionApp.css'
 import WelcomeComponent from './WelcomeComponent'
+import BmrCalculator from './calculators/BmrCalculator'
 import AuthProvider, { useAuth } from './security/AuthContext'
 
 
@@ -35,6 +36,9 @@ export default function NutritionApp() {
               <AuthenticatedRoute>
                 <FoodSearchForm />
               </AuthenticatedRoute>
+            } />
+            <Route path='/bmrcalculator' element={
+                <BmrCalculator /> 
             } />
             <Route path='/logout' element={
               <AuthenticatedRoute>
