@@ -1,0 +1,29 @@
+.bmr-calculator {
+    width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+  
+  .form {
+    margin-bottom: 15px;
+  }
+  
+  .form-title {
+    text-align: center;
+  }
+  
+  .input-container {
+    margin-bottom: 15px;
+  }
+  
+  .input-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .bmr-tdee-container {
+    display: flex;
+    justify-content: space-between;
+  }
