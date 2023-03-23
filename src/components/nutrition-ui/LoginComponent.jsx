@@ -1,6 +1,7 @@
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { useAuth } from './security/AuthContext'
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from './security/AuthContext';
+import './css/LoginComponent.css'
 
 function LoginComponent() {
     const [username, setUserName] = useState('rajib123')
@@ -22,7 +23,7 @@ function LoginComponent() {
 
     function handleSubmit() {
         if (authContext.login(username,password)) {
-            navigate(`/welcome/${username}`);
+            navigate(`/food/search`);
 
         } else {
             setShowErrorMessage(true);
@@ -35,12 +36,10 @@ function LoginComponent() {
             {showErrorMessage && <div className="errorMessage">Authentication Failed</div>}
             <div className="LoginForm">
                 <div>
-                    <label>User Name</label>
-                    <input type="text" name="username" value={username} onChange={handleUsernameChange} />
+                    <input type="text" placeholder="User Name" name="username" value={username} onChange={handleUsernameChange} />
                 </div>
                 <div>
-                    <label>Password</label>
-                    <input type="password" name="password" value={password} onChange={handlePasswordChange} />
+                    <input type="password" placeholder="Password" name="password" value={password} onChange={handlePasswordChange} />
                 </div>
                 <div>
                     <button type="button" name="login" onClick={handleSubmit}>login</button>

@@ -1,0 +1,54 @@
+.LoginComponent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  .LoginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .LoginForm label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .LoginForm input[type='text'],
+  .LoginForm input[type='password'] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  .LoginForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .LoginForm button:hover {
+    background-color: #45a049;
+  }
+  
+  .LoginForm input[type='text']:focus,
+  .LoginForm input[type='password']:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #4CAF50;
+  }
+  

@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom'
-import { useAuth } from './security/AuthContext'
+import { Link } from 'react-router-dom';
+import { useAuth } from './security/AuthContext';
+import './css/HeaderComponent.css';
 
 function HeaderComponent() {
     //const authContext = useContext(AuthContext)
