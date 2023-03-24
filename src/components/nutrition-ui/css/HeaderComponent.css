@@ -1,0 +1,35 @@
+header {
+    background-color: #0077be;
+    color: #fff;
+  }
+  
+  nav.navbar {
+    justify-content: space-between;
+  }
+  
+  nav.navbar ul li.nav-item a.nav-link {
+    color: #fff;
+    padding: 0.5rem 1rem;
+  }
+  
+  nav.navbar ul li.nav-item a.nav-link:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  nav.navbar ul li.nav-item.active a.nav-link {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  nav.navbar ul li.nav-item.active a.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  nav.navbar ul li.nav-item.active a.nav-link:focus {
+    outline: none;
+  }
+  
+  nav.navbar ul li.nav-item:not(:last-child) {
+    margin-right: 1rem;
+  }
+  

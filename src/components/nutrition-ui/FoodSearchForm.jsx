@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import FoodSearchResult from './FoodSearchResult';
+import './css/FoodSearchForm.css';
 
 function FoodSearchForm() {
   const [mealName, setMealName] = useState('');
@@ -43,10 +44,9 @@ function FoodSearchForm() {
 
   return (
     <div>
-      <div>
-        <label htmlFor="meal-name">Meal Name:</label>
-        <input id="meal-name" type="text" value={mealName} onChange={handleMealNameChange} />
-        <button onClick={handleSearch} disabled={isLoading}>
+      <div class="search-form">
+        <input id="meal-name" type="text" placeholder="Enter a meal name" value={mealName} onChange={handleMealNameChange} class="search-box" />
+        <button onClick={handleSearch} disabled={isLoading} class="search-button">
           {isLoading ? 'Wait..Your Meal is getting ready...' : 'Generate by AI'}
         </button>
       </div>
